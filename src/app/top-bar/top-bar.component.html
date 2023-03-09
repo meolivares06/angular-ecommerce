@@ -1,11 +1,24 @@
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
-</a>
+<div class="container">
+  <header
+    class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom"
+  >
+    <a
+      [routerLink]="['/']"
+      class="
+        d-flex
+        align-items-start
+        col-md-9
+        mb-2 mb-md-0
+        text-dark text-decoration-none
+      "
+    >
+      <span class="fs-4">My Store</span>
+    </a>
 
-<a class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
+    <div class="col-md-3 text-end">
+      <a class="btn btn-primary me-2"
+        ><i class="material-icons">shopping_cart</i>Checkout</a
+      >
+    </div>
+  </header>
+</div>
