@@ -1,3 +1,6 @@
-<p *ngIf="product && product.price > 700">
-  <button type="button" (click)="notify.emit()">Notify Me</button>
-</p>
+<a
+  *ngIf="product && product.price > 700"
+  class="btn btn-secondary ms-2"
+  (click)="notify.emit()"
+  >Notify Me</a
+>
